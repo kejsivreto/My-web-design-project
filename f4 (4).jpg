@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Info</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="ib_index.css">
+</head>
+
+<!-- Header -->
+<body>
+    <header class="header" id="header0">
+        <div class="header-1">
+            <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html" class="logo"> <i class="fa-solid fa-book-open"></i>BookBuzz</a>
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <div class="shoopingBasket">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>0</span>
+                </div>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html#home">Home</a>
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html#services">About</a>
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html#category">Category</a>
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html#featured">Featured</a>
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html#authors">Authors</a>
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html#testimonials">Reviews</a>
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/Book-Info/ib_index.html#footer">Contact</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/Book-Info/ib_index.html#header0" class="fas fa-home"></a>
+        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/Book-Info/ib_index.html#footer" class="fa-solid fa-id-badge"></a>
+    </nav>
+
+    
+<!-- ~Shooping-Cart -->
+<div class="sidebar" id="sidebar">
+        
+<div class="sidebar-close">
+    <i class="fa-solid fa-close"></i>
+</div>
+
+<div class="cart-menu">
+    <h3>My Cart</h3>
+    <div class="cart-tems">test 1</div>
+</div>
+
+<div class="sidebar--footer">
+    <div class="total--amount">
+        <h5>Total</h5>
+        <div class="cart-total">ALL0.00</div>
+    </div>
+    <button class="checkout-btn">Check out</button>
+</div>
+
+</div>
+
+<!-- ~Log-in-form -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>do not have an account ? <a href="#">create one</a></p>
+        </form>
+    </div>
+
+<!-- Book-Info -->
+<section id="books">
+    <div class="book-box-container">
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f1.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>100 Letra Dashurie</strong>
+                    <span>by Grup Autoresh</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>"We all know these significant names for their indelible marks and the works they left behind, but we know little about their intimate feelings. Full of style, sublimely expressed, beautifully and with great sensitivity, we bring you summarized some of their most famous letters, addressed to their beloveds in life."</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f2.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Arsye Dhe Ndjenje</strong>
+                    <span>by Jane Austen</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>“Arsye dhe ndjenjë”, Jane Austen's first published novel in 1811, initially appeared anonymously. On the first page, where the author's name should have been, only the text "By a Lady" appeared. "Sense and Sensibility," Austen's witty and humor-filled novel, rich with secrets and twists, deceit and seduction, brilliantly portrays a world where strict family and societal rules clash with matters of the heart.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f3.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Accidentally in Love</strong>
+                    <span>by Mhairi McFarlane</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Katharine is fulfilling her dream of opening an art gallery, prioritizing her career over romance. However, when she meets Kit, a talented and stubborn local artist, her resolutions are tested. As they navigate their relationship, Katharine discovers new feelings and the possibility of falling in love unexpectedly.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f4.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>It Starts With Us</strong>
+                    <span>by Colleen Hoover</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>In “It Starts With Us,” Atlas and Lily attempt to rekindle the love they felt for each other as teenagers, but must deal with the repercussions their love may have now as adults. Hoover illustrates a beautiful, innocent love between Atlas and Lily.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f5.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>This Summer Will Be Different</strong>
+                    <span>by Carley Fortune</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Lucy, vacationing at a beach house on Prince Edward Island, meets Felix, unaware he's her best friend's younger brother. Their chemistry is undeniable, but they vow to stay apart after a passionate night. Despite yearly visits to PEI with her friend Bridget, Lucy struggles to resist Felix. When Bridget flees Toronto days before her wedding, Lucy rushes to the island to help, only to find Felix has changed. Now, Lucy must navigate her feelings while supporting Bridget through her crisis.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f6.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>She's Not Sorry</strong>
+                    <span>by Mary Kubica</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Meghan Michaels, a single mom juggling nursing and parenthood, faces a critical shift when Caitlin arrives in her hospital in a coma after a suspicious fall from a bridge. A witness reveals shocking details suggesting Caitlin was pushed, sparking questions of motive and culprit. Meghan, usually detached, becomes deeply involved, unaware of the danger drawing closer to her and her daughter.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f7.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Agjenti Anglez</strong>
+                    <span>by Daniel Silva</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>A British royal is murdered in a bombing. Gabriel Allon, legendary agent, is tasked to find the killer: Eamon Quinn, a master bomb-maker and assassin. Assisting him is Christopher Keller, a former commando. Unbeknownst to Gabriel, Quinn is an old enemy with a deadly agenda against him. Gabriel will soon learn that even in death, there are unexpected consequences...</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f8.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Burri Qe Nuk Ishte Vrases</strong>
+                    <span>by Hjorth Rosenfeldt</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Sebastian Bergman is a man immersed in despair. He lost his wife and son in the tsunami that devastated the Indian archipelago, quit his job as a psychologist and profiler, and has resumed his old habit of bringing home a new woman every night... A novel filled with events that will keep you on the edge until the last page."</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f9.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Five Little Pigs</strong>
+                    <span>by Agatha Christie</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Five Little Pigs is a work of detective fiction by British writer Agatha Christie. The book features detective Hercule Poirot investigating five people about a murder committed sixteen years earlier. Caroline Crale died in prison after being wrongfully convicted of murdering her husband, Amyas Crale, by poisoning him. In her final letter from prison, she claims to be innocent of the murder. Her daughter Carla Lemarchant asks Poirot to investigate this cold case, based on the memories of the people closest to the couple.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f10.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Frankenstein</strong>
+                    <span>by Mary Shelley</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>"Frankenstein" by Mary Shelley tells the story of Victor Frankenstein, a scientist who creates a powerful being resembling a man. Despite the creature being commonly referred to as "Frankenstein" in popular culture, the novel explores themes of Gothic literature and Romanticism. It serves as a cautionary tale about the dangers of scientific overreach during the Industrial Revolution, earning its subtitle, "The Modern Prometheus." The novel's impact has extended across literature and popular culture, spawning a genre of horror and science fiction.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f11.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Then She Was Gone</strong>
+                    <span>by Lisa Jewell</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Fifteen-year-old Ellie, once her mother's pride, vanished suddenly years ago. Despite a decade passing, Laurel clings to hope. Then Floyd enters her life, a captivating stranger with a daughter who resembles Ellie. As Laurel grows closer to them, unanswered questions about Ellie's disappearance resurface, stirring up hidden secrets.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f12.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Those Empty Eyes</strong>
+                    <span>by Charlie Donlea</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Alex Armstrong, once known as Alexandra Quinlan or "Empty Eyes" after her family's murder, has reinvented herself completely. She's a legal investigator now, hiding from the public eye while hunting for answers about her family's death. When she takes on Matthew Claymore's case, accused of his girlfriend Laura McAllister's disappearance, Alex uncovers a web of campus scandals and dark secrets. As she delves deeper, she discovers unsettling connections between Laura's case and her own family's tragedy, revealing that identities and truths are more deceptive than they appear.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f13.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Dance of Thieves</strong>
+                    <span>by Mary E. Pearson</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>In a realm where an outlaw family rules by their own laws, a young queen's rise threatens their power, drawing their ire. Kazi, a renowned ex-thief sent by the queen to investigate, discovers complexities within Jase, a member of the Ballenger family. As their paths intertwine unexpectedly, they navigate a game of deception while pursuing hidden agendas that bind them closer together.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f14.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Gyjshja Gango</strong>
+                    <span>by David Walliams</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Ben, our hero, is utterly disappointed to be sent to stay at his grandmother's house. She's the most boring grandma he's ever seen: all she wants to do is play Scrabble and eat cabbage soup. But Ben is about to discover something surprising about her: she once stole valuable gemstones and now needs Ben's help...</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f15.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Five Survive</strong>
+                    <span>by Holly Jackson</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Eighteen-year-old Red and her friends embark on a Spring Break road trip in an RV to the beach, but their journey takes a terrifying turn when the vehicle breaks down in a remote area. Stranded without phone reception, they discover someone is targeting them systematically. As tensions rise and secrets unravel, they realize one among them holds a deadly secret worth killing for. In a deadly game of cat-and-mouse, they must uncover the traitor before it's too late, knowing not everyone will make it through the night.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f16.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>The Atlas Paradox</strong>
+                    <span>by Olivie Blake</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Six magicians faced a life-changing choice. Five joined the Society of Alexandrians. Now, they stand at a crossroads, forced to pick sides. As alliances fracture and secrets emerge, hearts will break and the true nature of the Society's immense power will be unveiled. Led by a visionary with plans that could reshape the world, they must navigate a perilous path where trust is scarce and betrayal lurks around every corner.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f17.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Only If You're Lucky</strong>
+                    <span>by Stacy Willingham</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>At a South Carolina liberal arts college, Margot, typically the shy sidekick, is drawn into the orbit of Lucy Sharpe, a bold and magnetic force. When Lucy invites Margot to live with her and two others off-campus, Margot's cautious life takes a daring turn. As Margot blossoms, tragedy strikes when a neighboring fraternity member is murdered, and Lucy disappears. A gripping thriller exploring friendship, loyalty, envy, and betrayal, this novel delves into the dark complexities of human connections from a master of psychological suspense.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f18.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Libri Qe Do Te Deshironit Te Lexonin Prinderit Tuaj</strong>
+                    <span>by Philippa Perry</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>In this insightful book, psychotherapist Philippa Perry explores essential principles for parenting and fostering a healthy parent-child relationship. She helps readers understand how upbringing influences parenting styles, navigate mistakes, break negative patterns, manage emotions effectively, and interpret children's behaviors. Packed with practical advice, it's a must-read for parents and anyone interested in improving family dynamics.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f19.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Kur Trupi Thot Jo</strong>
+                    <span>by Gabor Mate</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>Modern studies are confirming the age-old wisdom that emotions are inseparable from our health and physiology. Suppressed emotions can lead to stress, which may contribute to illness. In this internationally bestselling book, Gabor Maré draws on the latest scientific data and decades of medical experience, along with stories of famous individuals like Lou Gehrig, Lance Armstrong, Gilda Radner, and Ronald Reagan. He examines the role hidden stress plays in various diseases including heart disease, diabetes, irritable bowel syndrome, multiple sclerosis, arthritis, and cancer.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f20.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Read People Like a Book</strong>
+                    <span>by Patrick King</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>"Learn to read people like a book, understand their thoughts, and connect deeply without words. Patrick King, bestselling author and social skills coach, delves beyond body language and lie detection into human psychology. Explore practical strategies to interpret subtle cues, boost emotional intelligence, and influence others adeptly. This book blends science with coaching wisdom, providing tools to decode personalities, leverage eye contact, and establish immediate rapport. Master the art of human understanding for navigating social interactions and achieving your goals."</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f21.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>Surrounded by Idiots</strong>
+                    <span>by Thomas Erikson</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>"Surrounded by Idiots," a bestseller from Sweden, unveils a method for understanding people. Author Thomas Erikson defines four behavior types—Reds, Yellows, Greens, and Blues—that shape interactions. This system aids in recognizing and adapting to various personalities, enhancing relationships and social navigation.</p>
+            </div>
+        </div>
+
+        <div class="book-box">
+            <div class="box-top">
+                <div class="book-cover">
+                    <img src="foto/f22.jpg">
+                </div>
+                <div class="book-title">
+                    <strong>First Lie Wins</strong>
+                    <span>by Ashley Elston</span>
+                </div>
+            </div>
+            <div class="book-description">
+                <p>"Evie Porter lives a double life under Mr. Smith's meticulous direction. With a fabricated identity targeting Ryan Sumner, she navigates seamlessly through a picturesque town. As emotions for Ryan complicate her mission, Evie faces the danger of her true identity surfacing. Balancing past and present, she maneuvers a high-stakes game where each move risks unraveling her fabricated life and any hope for a real future."</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ~Footer -->  
+    <footer id="footer">
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Welcome to BookBuzz! We're your go-to for great books and community. Explore new releases, beloved classics, and connect with fellow readers. Let's dive into the world of books together!</p>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div> 
+            
+            <div class="sec quickLinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+      
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa-solid fa-map-pin"></i></span>
+                        <span id="Road">Rinia Road,<br>
+                        Vorë 1032,<br>Albania.</span>
+                    </li>
+      
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p><a href="tel:0686828607">+068 682 8607</a>
+                    </li>
+      
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p><a href="mailto:bookbuzz@gmail.com">bookbuzz@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyrightText">
+            <p>Copyright, All Rights Reserved.</p>
+        </div>
+        
+    </footer>
+
+    <!-- ~JavaScript -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="ib_script.js"></script>
+</body>
+</html>

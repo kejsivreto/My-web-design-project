@@ -1,0 +1,324 @@
+searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+}
+
+
+let loginForm = document.querySelector('.login-form-container');
+console.log(loginForm)
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+}
+
+document.querySelector('#close-login-btn').onclick = () =>{
+    loginForm.classList.remove('active');
+}
+
+
+window.onscroll = () => {
+
+    searchForm.classList.remove('active');
+
+    if(window.scrollY > 80 ){
+        document.querySelector('.header .header-2').classList.add('active');
+    }else{
+        document.querySelector('.header .header-2').classList.remove('active');
+    }
+
+}
+
+window.onload = () => {
+
+    if(window.scrollY > 80 ){
+        document.querySelector('.header .header-2').classList.add('active');
+    }else{
+        document.querySelector('.header .header-2').classList.remove('active');
+    }
+
+}
+
+
+
+// const categoryLinks = document.querySelectorAll('.category-link');
+// const bookWrapper = document.getElementById('book-wrapper');
+
+// const booksData = {
+//   romance: [
+//     {
+//       title: "100 letra dashurie",
+//       image: "foto/romance/f1.jpg",
+//       price: "ALL 1200",
+//       originalPrice: "ALL 1500"
+//     },
+//     {
+//       title: "Arsye dhe ndjenje",
+//       image: "foto/romance/f2.jpg",
+//       price: "ALL 1200",
+//       originalPrice: "ALL 1500"
+//     },
+//     {
+//       title: "Accidentally in Love",
+//       image: "foto/romance/f3.jpg",
+//       price: "ALL 1500",
+//       originalPrice: "ALL 2200"
+//     },
+//     {
+//       title: "It Starts with Us",
+//       image: "foto/romance/f4.jpg",
+//       price: "ALL 1800",
+//       originalPrice: "ALL 2000"
+//     },
+//     {
+//       title: "This Summer Will Be..",
+//       image: "foto/romance/f5.jpg",
+//       price: "ALL 2000",
+//       originalPrice: "ALL 3000"
+//     },
+//     {
+//       title: "She's Not Sorry",
+//       image: "foto/romance/f6.jpg",
+//       price: "ALL 2000",
+//       originalPrice: "ALL 2500"
+//     },
+    
+//   ],
+//   mister_thriller: [
+//     {
+//       title: "Agjenti anglez",
+//       image: "foto/mister&thriller/f1.jpg",
+//       price: "ALL 1400",
+//       originalPrice: "ALL 2200"
+//     },
+//     {
+//       title: "Burri që nuk ishte vrasës",
+//       image: "foto/mister&thriller/f2.jpg",
+//       price: "ALL 1400",
+//       originalPrice: "ALL 1900"
+//     },
+//     {
+//       title: "Five Little Pigs",
+//       image: "foto/mister&thriller/f3.jpg",
+//       price: "ALL 1500",
+//       originalPrice: "ALL 2500"
+//     },
+//     {
+//       title: "Frankenstein",
+//       image: "foto/mister&thriller/f4.jpg",
+//       price: "ALL 2450",
+//       originalPrice: "ALL 2700"
+//     },
+//     {
+//       title: "Then She Was Gone",
+//       image: "foto/mister&thriller/f5.jpg",
+//       price: "ALL 2700",
+//       originalPrice: "ALL 3200"
+//     },
+//     {
+//       title: "Those Empty Eyes",
+//       image: "foto/mister&thriller/f6.jpg",
+//       price: "ALL 2500",
+//       originalPrice: "ALL 3000"
+//     },
+
+//   ],
+//   fantazi: [
+//     {
+//       title: "Dance of Thieves",
+//       image: "foto/fantazi/f1.jpg",
+//       price: "ALL 1700",
+//       originalPrice: "ALL 2500"
+//     },
+//     {
+//       title: "Gjyshja Gango",
+//       image: "foto/fantazi/f2.jpg",
+//       price: "ALL 900",
+//       originalPrice: "ALL 1200"
+//     },
+//     {
+//       title: "Five Survive",
+//       image: "foto/fantazi/f3.jpg",
+//       price: "ALL 2300",
+//       originalPrice: "ALL 2500"
+//     },
+//     {
+//       title: "The Atlas Paradox",
+//       image: "foto/fantazi/f4.jpg",
+//       price: "ALL 2500",
+//       originalPrice: "ALL 2900"
+//     },
+//     {
+//       title: "Only If You're Lucky",
+//       image: "foto/fantazi/f5.jpg",
+//       price: "ALL 2600",
+//       originalPrice: "ALL 3000"
+//     },
+
+//   ],
+//   psikologji: [
+//     {
+//       title: "Libri që do të dëshironit të..",
+//       image: "foto/psikologji/f1.jpg",
+//       price: "ALL 1200",
+//       originalPrice: "ALL 2000"
+//     },
+//     {
+//       title: "Kur trupi thotë jo",
+//       image: "foto/psikologji/f2.jpg",
+//       price: "ALL 1400",
+//       originalPrice: "ALL 1600"
+//     },
+//     {
+//       title: "Read People Like a Book",
+//       image: "foto/psikologji/f3.jpg",
+//       price: "ALL 2200",
+//       originalPrice: "ALL 2500"
+//     },
+//     {
+//       title: "Surrounded by Idiots",
+//       image: "foto/psikologji/f4.jpg",
+//       price: "ALL 1650",
+//       originalPrice: "ALL 1800"
+//     },
+//     {
+//       title: "First Lie Wins",
+//       image: "foto/psikologji/f5.jpg",
+//       price: "ALL 1850",
+//       originalPrice: "ALL 2500"
+//     },
+
+//   ]
+// };
+
+// categoryLinks.forEach(link => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault(); // Prevent default link behavior
+//     const category = link.dataset.category;
+//     fetchBooks(category);
+//   });
+// });
+
+// function fetchBooks(category) {
+//   const books = booksData[category];
+
+//   // Clear previous book content
+//   bookWrapper.innerHTML = '';
+
+//   // Display the filtered books
+//   books.forEach(book => {
+//     const bookBox = document.createElement('div');
+//     bookBox.classList.add('box');
+
+//     bookBox.innerHTML = `
+//             <div class="icons">
+//                 <a href="#" class="fas fa-search"></a>
+//                 <a href="#" class="fas fa-heart"></a>
+//                 <a href="Book-Info/ib_index.html" class="fas fa-eye"></a>
+//             </div>
+
+//             <div class="image">
+//                 <img src="${book.image}" alt="">
+//             </div>
+
+//             <div class="content">
+//                 <h3>${book.title}</h3>
+//                 <div class="price">${book.price} <span>${book.originalPrice}</span></div>
+//                 <a href="#" class="btn">add to cart</a>
+//             </div>
+//         `;
+
+//     bookWrapper.appendChild(bookBox);
+//   });
+// }
+
+// // Initial display of books, you can fetch all or a default category
+// fetchBooks('romance'); // Or use another category as needed
+
+// /* shopping cart */
+
+// const addToCartButtons = document.querySelectorAll('.add-to-cart');
+// const cartItemCount = document.querySelector('.cart-icon span');
+// const cartItemList = document.querySelector('.cart-items');
+// const cartTotal = document.querySelector('.cart-total');
+// const cartIcon = document.querySelector('.cart-icon');
+// const sidebar = document.getElementById('sidebar');
+
+// let cartItems = [];
+// let totalAmount = 0;
+
+// addToCartButtons.forEach((button, index)=>{
+//     button.addEventListener('click', ()=> {
+//         const item = {
+//             name: document.querySelectorAll('.card .card-title')[index].textContent,
+//             price: parseFloat(document.querySelectorAll('.price')[index].textContent.slice(1),
+//         ),
+//         quantity: 1,
+//         };
+
+//         const exisitingItem = cartItems.find(
+//             (cartitem)=> cartitem.name === item.name,
+//         );
+//         if(exisitingItem){
+//             exisitingItem.quantity++;
+//         }
+//         else{
+//             cartItems.push(item);
+//         }
+
+//         totalAmount += item.price;
+
+//         updateCartUI();
+//     });
+
+//     function updateCartUI(){
+//         updateCartItemCount(cartItems.length);
+//         updateCartItemList();
+//         updateCartTotal();
+//     }
+
+//     function updateCartItemCount(count) {
+//         cartItemCount.textContent = count;
+//     }
+//     function updateCartItemList(){
+//         cartItemsList.innerHTML ='';
+//         cartItems.forEach((item, index)=> {
+//             const cartItem = document.createElement('div');
+//             cartItem.classList.add('cart-item', 'individual-cart-item');
+//             cartItem.innerHTML= `
+//             <span>(${item.quantity}x)${item.name}</span>
+//             <span class="cart-item-price">(${(item.price * item.quantity).toFixed(2)}
+//             <button class="remove-btn" data-index="${index}"><i class="fa-solid fa-times"</i></button>
+//             </span>
+//             `;
+
+//             cartItemList.append(cartItem);
+//         });
+
+//         const removeButtons = document.querySelectorAll('.remove-item');
+//         removeButtons.forEach((button)=>{
+//             button.addEventListener('click', (event)=>{
+//                 const index = event.target.dataset.index;
+//                 removeItemFromCart(index);
+//             });
+//         });
+//     }
+
+//     function removeItemFromCart(index){
+//         const removeItem = cartItems.splice(index, 1)[0];
+//         totalAmount -= removeItem.price * removeItem.quantity;
+//         updateCartUI();
+//     }
+
+//     function updateCartTotal(){
+//         cartTotal.textContent = `$${totalAmount.toFixed(2)}`;
+//     }
+
+//     cartIcon.addEventListener('click', ()=>{
+//         sidebar.classList.toggle('open');
+//     });
+
+//     const closeButton = document.querySelector('.sidebar-close');
+//     closeButton.addEventListener('click', ()=>{
+//         sidebar.classList.remove('open')
+//     });
+// });

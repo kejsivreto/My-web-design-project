@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BookBuzz</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/fp_style.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-1">
+                <a href="file:///C:/Users/user/Desktop/PROJEKTI/FrontPage/fp_index.html" class="logo"> <i class="fa-solid fa-book-open"></i>BookBuzz</a>
+                <form action="" class="search-form">
+                    <input type="search" name="" placeholder="search here..." id="search-box">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+
+                <div class="icons">
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <a href="#" class="fas fa-heart"></a>
+                    <div class="shoopingBasket">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0</span>
+                    </div>
+                    <div id="login-btn" class="fas fa-user"></div>
+                </div>
+
+            </div>
+
+            <div class="header-2">
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#services">About</a>
+                    <a href="#category">Categories</a>
+                    <a href="#featured">Trending</a>
+                    <a href="#authors">Authors</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#footer">Contact</a>
+                </nav>
+            </div>
+
+        </header>
+
+        <nav class="bottom-navbar">
+            <a href="#home" class="fas fa-home"></a>
+            <a href="#services" class="fa-solid fa-circle-info"></a>
+            <a href="#category" class="fa-solid fa-list"></a>
+            <a href="#featured" class="fa-solid fa-layer-group"></a>
+            <a href="#authors" class="fa-solid fa-pen"></a>
+            <a href="#testimonials" class="fas fa-comments"></a>
+            <a href="#footer" class="fa-solid fa-id-badge"></a>
+        </nav>
+
+<!-- ~Shooping-Cart -->
+        <div class="sidebar" id="sidebar">
+            
+            <div class="sidebar-close">
+                <i class="fa-solid fa-close"></i>
+            </div>
+
+            <div class="cart-menu">
+                <h3>My Cart</h3>
+                <div class="cart-tems"></div>
+            </div>
+
+            <div class="sidebar--footer">
+                <div class="total--amount">
+                    <h5>Total</h5>
+                    <div class="cart-total">ALL0.00</div>
+                </div>
+                <button class="checkout-btn">Check out</button>
+            </div>
+
+        </div>
+
+        <!-- ~Log-In-Form -->
+
+        <div class="login-form-container">
+
+            <div id="close-login-btn" class="fas fa-times"></div>
+
+            <form action="">
+                <h3>sign in</h3>
+                <span>username</span>
+                <input type="email" name="" class="box" placeholder="enter your email" id="">
+                <span>password</span>
+                <input type="password" name="" class="box" placeholder="enter your password" id="">
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="remember-me">
+                    <label for="remember-me">remember me</label>
+                </div>
+                <input type="submit" value="sign in" class="btn">
+                <p>forget password ? <a href="#">click here</a></p>
+                <p>do not have an account ? <a href="#">create one</a></p>
+            </form>
+        </div>
+
+
+        <section class="home" id="home">
+
+            <div class="row">
+
+                <div class="content">
+                    <h1>BookBuzz</h1>
+                    <h3>“READING IS THE BEST JOURNEY.”</h3>
+
+                </div>
+
+                <div class="swiper books-slider">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide"><img src="foto/book1.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book2.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book3.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book4.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book5.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book6.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book7.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book8.jpg" alt=""></a>
+                        <a href="#" class="swiper-slide"><img src="foto/book9.jpg" alt=""></a>
+                    </div>
+                    <img src="foto/stand.png" class="stand" alt="">
+
+                </div>
+            </div>
+        </section>
+
+<!-- ~Services -->
+
+        <section id="services">
+            <div class="service">
+                <h2> <i class="fa-solid fa-face-laugh-beam"></i> Satisfied customer</h2>
+            </div>
+    
+            <div class="service">
+                <h2> <i class="fa-solid fa-medal"></i> Quality service</h2>
+            </div>
+            
+            <div class="service"> 
+                <h2> <i class="fa-solid fa-bag-shopping"></i> Delivery 24/48</h2>
+            </div>
+            
+            <div class="service">
+                <h2> <i class="fa-solid fa-truck-fast"></i> Worldwide shipping</h2>
+            </div>
+        </section>
+
+
+
+<!-- ~Categories -->
+
+<section id="category">
+        <div class="category-section">
+            <div class="category-content">
+                <h1>SHOP BY CATEGORY</h1>
+
+                <div class="categories">
+                    <div class="category">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html#romance">
+                            <img src="foto/romantik.png" alt="Romance">
+                            <div class="title">Romance</div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html#mister_thriller">
+                            <img src="foto/MisterThrill.jpg" alt="Mister & Thriller">
+                            <div class="title">Mystery & Thriller</div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html#fantazi">
+                            <img src="foto/fantazi.png" alt="Fantazi">
+                            <div class="title">Fantasy</div>
+                        </a>
+                    </div>
+                    <div class="category">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html#psikologji">
+                            <img src="foto/psikologji.png" alt="Psikologji">
+                            <div class="title">Psychology</div>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- ~Trending -->
+
+        <section class="featured" id="featured">
+            <div class="trending_container">
+                <button id="prevBtn">&lt;</button>
+                <h2 class="section_title">TRENDING</h2>
+                <button id="nextBtn">&gt;</button>
+            </div>
+
+            <div class="featured_container">
+                <div class="swiper-wrapper">
+                    <article class="featured_card swiper-slide">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html"><img src="foto/mostlikedbook2.jpg" alt="Book 1" class="featured_img"></a>
+                        <h2 class="featured_title">Those Empty Eyes</h2>
+                        <div class="featured_prices">
+                            <span class="featured_discount">ALL 1000</span>
+                            <span class="featured_price">ALL 2000</span>
+                        </div>
+
+                        <button class="button">Add To Cart</button>
+                    </article>
+          
+                    <article class="featured_card swiper-slide">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html"><img src="foto/mostlikedbook1.jpg" alt="Book 2" class="featured_img"></a>
+                        <h2 class="featured_title">Then She Was Gone</h2>
+                        <div class="featured_prices">
+                            <span class="featured_discount">ALL 1200</span>
+                            <span class="featured_price">ALL 2500</span>
+                        </div>
+                        <button class="button">Add To Cart</button>
+                    </article>
+          
+                    <article class="featured_card swiper-slide">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html"><img src="foto/mostlikedbook3.jpg" alt="Book 3" class="featured_img"></a>
+                        <h2 class="featured_title">First Lie Wins</h2>
+                        <div class="featured_prices">
+                            <span class="featured_discount">ALL 2200</span>
+                            <span class="featured_price">ALL 4400</span>
+                        </div>
+                        <button class="button">Add To Cart</button>
+                    </article>
+          
+                    <article class="featured_card swiper-slide">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html"><img src="foto/mostlikedbook4.jpg" alt="Book 4" class="featured_img"></a>
+                        <h2 class="featured_title">This Summer Will Be..</h2>
+                        <div class="featured_prices">
+                            <span class="featured_discount">ALL 1500</span>
+                            <span class="featured_price">ALL 2000</span>
+                        </div>
+                        <button class="button">Add To Cart</button>
+                    </article>
+          
+                    <article class="featured_card swiper-slide">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html"><img src="foto/mostlikedbook5.jpg" alt="Book 5" class="featured_img"></a>
+                        <h2 class="featured_title">She Is Not Sorry</h2>
+                        <div class="featured_prices">
+                            <span class="featured_discount">ALL 1000</span>
+                            <span class="featured_price">ALL 2500</span>
+                        </div>
+                        <button class="button">Add To Cart</button>
+                    </article>
+          
+                    <article class="featured_card swiper-slide">
+                        <a href="file:///C:/Users/user/Desktop/PROJEKTI/Category/c_index.html"><img src="foto/mostlikedbook6.jpg" alt="Book 6" class="featured_img"></a>
+                        <h2 class="featured_title">Only If You're Lucky</h2>
+                        <div class="featured_prices">
+                            <span class="featured_discount">ALL 1000</span>
+                            <span class="featured_price">ALL 2000</span>
+                        </div>
+                        <button class="button">Add To Cart</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ~Autoret -->
+        <section id="authors">
+            <div class="slide-controls">
+                <button id="prevBtn0" onclick="prev()">&lt;</button>
+                <h2 class="section_title">AUTHORS</h2>
+                <button id="nextBtn0" onclick="next()">&gt;</button>
+            </div>
+        <div class="card-slider">
+            <div class="card-container">
+                <div class="card">
+                    <img src="foto/stephenking.jpg">
+                    <div class="card-info">
+                        <h3>Stephen King</h3>
+                        <p>Stephen Edwin King is an American author. Called the "King of Horror",he has also explored other genres,like suspense,science-fiction, and mystery.He has written approximately 200 short stories,most of which have been published in collections.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="foto/edgatallanpoe.jpg">
+                    <div class="card-info">
+                        <h3>Edgar Allan Poe</h3>
+                        <p>Edgar Allan Poe was an American writer, poet, author, editor, and literary critic who is best known for his poetry and short stories, particularly his tales of mystery and the macabre. He is widely regarded as a central figure of Gothic fiction in the United States.</p>
+                    </div>
+                </div>
+       
+                <div class="card">
+                    <img src="foto/richardprice.jpg">
+                    <div class="card-info">
+                        <h3>Richard Price</h3>
+                        <p>Richard Price is an American novelist,known for the books The Wanderers, Clockers and Lush Life. Price's novels explore late-20th-century urban America in a gritty, realistic manner that has brought him considerable literary acclaim.</p>
+                    </div>
+                </div>
+       
+                <div class="card">
+                    <img src="foto/ShirleyJack.jpg">
+                    <div class="card-info">
+                        <h3>Shirley Jackson</h3>
+                        <p>Shirley Hardie Jackson was an American writer known primarily for her works of horror and mystery. Her writing career spanned over two decades, during which she composed six novels, two memoirs, and more than approximately 200 short stories.</p>
+                    </div>
+                </div>
+       
+                <div class="card">
+                    <img src="foto/neil.jpg">
+                    <div class="card-info">
+                        <h3>Neil Gaiman</h3>
+                        <p>Neil Richard MacKinnon Gaiman is an English author of short fiction, novels, comic books, graphic novels, audio theatre, and screenplays. His works include the comic book series The Sandman and the novels Good Omens, Stardust, Coraline.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="foto/lovecraft.jpg">
+                    <div class="card-info">
+                        <h3>H.P.Lovecraft</h3>
+                        <p>Howard Phillips Lovecraft was an American author from Rhode Island of horror,fantasy and science fiction.Lovecraft's major inspiration and invention was cosmic horror: life is incomprehensible to human minds and the universe is fundamentally alien. </p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="foto/algernon.jpg">
+                    <div class="card-info">
+                        <h3>Algernon Blackwood</h3>
+                        <p>Algernon Henry Blackwood was an English broadcasting narrator, journalist, novelist , and among the most prolific ghost story writers in the history of the genre.His two best-known stories are probably "The Willows" and "The Wendigo". </p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img src="foto/moore.jpg">
+                    <div class="card-info">
+                        <h3>Alan Moore</h3>
+                        <p>Alan Moore is an English author known for his work in comic books including Watchmen, V for Vendetta, The Ballad of Halo Jones,Batman: The Killing Joke.He is widely recognised as one of the best comic book writers in the English language.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <!-- ~Reviews -->
+        <section id="testimonials">
+            <div class="testimonial-heading">
+                <h1>WHAT PEOPLE SAY ABOUT US</h1>    
+            </div>
+          
+            <div class="testimonial-box-container">
+                <div class="testimonial-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="foto/client1.jpg">
+                            </div>
+          
+                            <div class="name-user">
+                                <strong>Mia Davis</strong>
+                                <span>@miadavis</span>
+                            </div>
+          
+                        </div>
+                        
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+          
+                    </div>
+              
+                    <div class="client-comment">
+                        <p>"I absolutely love this book website! It has such a wide selection of titles, and the user interface is incredibly easy to navigate. I always find exactly what I'm looking for here!"</p>
+                    </div>
+          
+                </div>
+          
+                <div class="testimonial-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="foto/client2.jpg">
+                            </div>
+          
+                            <div class="name-user">
+                                <strong>Ava Thompson</strong>
+                                <span>@avathompson</span>
+                            </div>
+          
+                        </div>
+          
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+          
+                    </div>
+          
+                    <div class="client-comment">
+                        <p>"This website is a book lover's paradise! The recommendations are spot-on, the reviews are insightful, and I appreciate how easy it is to discover new reads. Five stars!"</p>
+                    </div>
+          
+                </div>
+          
+                <div class="testimonial-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="foto/client3.jpg">
+                            </div>
+          
+                            <div class="name-user">
+                                <strong>Emily Johnson</strong>
+                                <span>@emilyjohnson</span>
+                            </div>
+          
+                        </div>
+          
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+          
+                    </div>
+          
+                    <div class="client-comment">
+                        <p>"I've tried several book websites, and this one stands out for its comprehensive search options and detailed book summaries. It's my go-to whenever I need inspiration for my next read!"</p>
+                    </div>
+          
+                </div>
+          
+                <div class="testimonial-box">
+                    <div class="box-top">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="foto/client4.jpg">
+                            </div>
+          
+                            <div class="name-user">
+                                <strong>Sophia Martinez</strong>
+                                <span>@sophiamartinez</span>
+                            </div>
+          
+                        </div>
+          
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+          
+                    </div>
+               
+                    <div class="client-comment">
+                        <p>"The customer service on this website is outstanding. They respond quickly to inquiries and go above and beyond to ensure customer satisfaction. Plus, their collection of books is unmatched. Highly recommend!"</p>
+                    </div>
+          
+                </div>
+            </div>
+        </section>
+
+        <!-- ~Footer -->
+        <footer id= "footer">
+            <div class="container">
+                <div class="sec aboutus">
+                    <h2>About Us</h2>
+                    <p>Welcome to BookBuzz! We're your go-to for great books and community. Explore new releases, beloved classics, and connect with fellow readers. Let's dive into the world of books together!</p>
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://x.com/?lang=en"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div> 
+                
+                <div class="sec quickLinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">About</a></li>
+                        <li><a href="#category">Categories</a></li>
+                        <li><a href="#featured">Trending</a></li>
+                        <li><a href="#authors">Authors</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                    </ul>
+                </div>
+          
+                <div class="sec contact">
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <span><a href="https://www.google.com/maps/@41.3956038,19.6529984,18.37z?entry=ttu">Rinia Road,
+                            Vorë 1032, Albania.</span>
+                        </li>
+          
+                        <li>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <p><a href="tel:0686828607">+068 682 8607</a>
+                        </li>
+          
+                        <li>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <p><a href="mailto:bookbuzz@gmail.com">bookbuzz@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyrightText">
+                <p>Copyright, All Rights Reserved.</p>
+            </div>
+            
+        </footer>
+
+        <!-- ~JavaScript -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <script src="js/fp_script.js"></script>
+    </body>
+
+</html>
